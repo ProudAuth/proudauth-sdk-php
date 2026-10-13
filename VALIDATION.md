@@ -9,7 +9,9 @@ Runtime: **PHP 8.5.8; OpenSSL 3.6.3; libsodium 1.0.22**.
 
 Contract hashes (4 files): pass. Syntax: **90 files passed**, plus the corrected package test. Test runner: **157 passed, 0 failed; 3079 assertions**.
 
-The license test now checks the pinned Apache-2.0 license hash/text locally rather than reading a sibling Node repository. Composer is unavailable locally: composer validate remains an explicit unexecuted CI gate. PHP 8.2 was not locally tested.
+The license test checks the pinned Apache-2.0 license hash/text locally rather than
+reading a sibling Node repository. Composer was unavailable for the local staging
+checks; the subsequent independent CI runs verify it on PHP 8.2 and 8.5.
 
 All restores used existing local caches with network package/module downloads
 disabled. No Docker, database or public deployment was used; tests use synthetic
@@ -25,6 +27,11 @@ public at [`proudbase/proudauth-sdk-php`](https://github.com/proudbase/proudauth
 The [initial independent CI run](https://github.com/proudbase/proudauth-sdk-php/actions/runs/38454463845)
 passed at commit `e54894273e4822458f901f7fd548503cb3a160c4` on PHP 8.2 and 8.5.
 Composer validation, syntax and the SDK test runner passed.
+The [public VCS consumer validation](https://github.com/proudbase/proudauth-sdk-php/actions/runs/38458707068)
+passed at `80a1aee474ab2c2aa14ff64689ff8e47c637cdb3` on both PHP 8.2 and 8.5.
+A fresh Composer application resolved `dev-main` at the exact tested source
+revision, installed from the public repository and successfully autoloaded the
+SDK's version class. Runtime and contract/vector bytes were unchanged.
 GitHub private vulnerability reporting is enabled. No package-registry release
 or SDK release tag has been published.
 
