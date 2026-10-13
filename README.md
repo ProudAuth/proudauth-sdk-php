@@ -70,9 +70,14 @@ from this public GitHub repository without a subtree split:
 ```json
 {
     "repositories": [{ "type": "vcs", "url": "https://github.com/proudbase/proudauth-sdk-php.git" }],
-    "require": { "proudauth/sdk": "0.2.0" }
+    "require": { "proudauth/sdk": "dev-main" }
 }
 ```
+
+There is no SDK release tag yet. Composer infers VCS versions from branch/tag
+names, so this source installation explicitly selects `dev-main`, not `0.2.0`.
+Commit `composer.lock` in your application to retain the exact resolved source
+revision. The path-repository example can use the package's declared `0.2.0`.
 
 Without Composer, register a PSR-4 autoloader for `ProudAuth\Sdk\` pointing at
 `src/` (the tests do exactly that in `tests/bootstrap.php`).

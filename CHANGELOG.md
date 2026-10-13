@@ -16,5 +16,11 @@ will use semantic versioning; the initial 0.x API may change between minor versi
 
 - Monorepo-relative test inputs and documentation links now work from this checkout.
 
+### Fixed
+
+- The Composer VCS installation example selects `dev-main` while no SDK tag
+  exists. CI installs a fresh consumer from the exact public source revision and
+  verifies PSR-4 autoloading on both supported PHP test versions.
+
 The standalone source is public. No registry package or release tag has been published.
 The existing SDK behavior and 0.2.0 version identifiers are retained.

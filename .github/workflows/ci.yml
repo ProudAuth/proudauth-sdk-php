@@ -35,3 +35,22 @@ jobs:
           find src tests -name '*.php' -print0 | xargs -0 -n1 php -l
       - name: SDK security fixtures and unit tests
         run: php -d error_reporting=-1 -d display_errors=1 tests/run.php
+      - name: Verify the documented public VCS consumer
+        if: github.ref == 'refs/heads/main'
+        env:
+          PROUDAUTH_SDK_SOURCE_COMMIT: ${{ github.sha }}
+        run: |
+          consumer_dir=$(mktemp -d)
+          trap 'rm -rf "$consumer_dir"' EXIT
+          python3 - "$consumer_dir" <<'PY'
+          import json, os, pathlib, sys
+          document = {
+              "name": "proudbase/sdk-install-smoke",
+              "repositories": [{"type": "vcs", "url": "https://github.com/proudbase/proudauth-sdk-php.git"}],
+              "require": {"proudauth/sdk": "dev-main#" + os.environ["PROUDAUTH_SDK_SOURCE_COMMIT"]},
+              "config": {"allow-plugins": False}
+          }
+          pathlib.Path(sys.argv[1], 'composer.json').write_text(json.dumps(document, indent=2) + '\n')
+          PY
+          composer install --working-dir="$consumer_dir" --no-interaction --no-progress --no-scripts
+          php -r 'require $argv[1] . "/vendor/autoload.php"; if (ProudAuth\Sdk\Version::SDK_VERSION !== "0.2.0") { exit(1); } echo "Public VCS consumer installed and autoloaded successfully\n";' "$consumer_dir"
