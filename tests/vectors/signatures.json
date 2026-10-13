@@ -1,0 +1,660 @@
+{
+  "description": "Independent signature vectors for the ProudAuth PHP SDK, generated with Go's crypto/ecdsa, crypto/rsa and crypto/ed25519 (plus a hand-built EMSA-PSS encoder for malformed encodings). TEST-ONLY KEYS: never trust them anywhere a real token could be accepted.",
+  "generator": "throwaway Go program (not kept in the repository), go1.27, 2026-10-11",
+  "keys": [
+    {
+      "kid": "es-vec-1",
+      "kind": "EC",
+      "jwk": {
+        "alg": "ES256",
+        "crv": "P-256",
+        "kid": "es-vec-1",
+        "kty": "EC",
+        "use": "sig",
+        "x": "12r0ty558eLyTvyaVReFgfKO7tm_sgz3yitMTDW7uvY",
+        "y": "S4k7dXHd3vgE9bGtKa6a9e9cemRFRgzM9vfIIpZkjSI"
+      },
+      "spki_der_b64": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE12r0ty558eLyTvyaVReFgfKO7tm/sgz3yitMTDW7uvZLiTt1cd3e+AT1sa0prpr171x6ZEVGDMz298gilmSNIg=="
+    },
+    {
+      "kid": "es-vec-2",
+      "kind": "EC",
+      "jwk": {
+        "alg": "ES256",
+        "crv": "P-256",
+        "kid": "es-vec-2",
+        "kty": "EC",
+        "use": "sig",
+        "x": "90Xk0IBbd2E4d7zxjFVGd20YheMEjGrbdQPzZwnCt2o",
+        "y": "In8zOd_cqtl3BbtHgh_h45j5PZjN4G7NrbmQhlQsW8w"
+      },
+      "spki_der_b64": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE90Xk0IBbd2E4d7zxjFVGd20YheMEjGrbdQPzZwnCt2oifzM539yq2XcFu0eCH+HjmPk9mM3gbs2tuZCGVCxbzA=="
+    },
+    {
+      "kid": "ps-vec-2048",
+      "kind": "RSA",
+      "bits": 2048,
+      "jwk": {
+        "alg": "PS256",
+        "e": "AQAB",
+        "kid": "ps-vec-2048",
+        "kty": "RSA",
+        "n": "uwLsa79DieinWpBb_8O-3uzs39WQxeOC5r5WlY_wElrcWgnJaEMRnZGZ-OGkvGivxC8F3f0nE_z5wqMfFfqjVzhjx_nNAEEMnzLKWPpAYN4g4GPKxkOTkXmgkyb01DVQqDLI7yehZMi4BD_sew1XbvwuCBRrJI-lsPukKHGYDcDN2O28fd8OnEqqzC3zj1rtISgroDW_PEyE7x_f4rm0K4fKD33BN9VXEvc7tAUulRFdWA3gUB0sgrb0cUTHziLgoPIkxkh8KIzjFR3sH-7-A1AXbaAJ0enxIZ8z4SxLc286dPp9deaUvtw94zCqBr75Rv9077sFqWDqmYpcYNc_MQ",
+        "use": "sig"
+      },
+      "spki_der_b64": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuwLsa79DieinWpBb/8O+3uzs39WQxeOC5r5WlY/wElrcWgnJaEMRnZGZ+OGkvGivxC8F3f0nE/z5wqMfFfqjVzhjx/nNAEEMnzLKWPpAYN4g4GPKxkOTkXmgkyb01DVQqDLI7yehZMi4BD/sew1XbvwuCBRrJI+lsPukKHGYDcDN2O28fd8OnEqqzC3zj1rtISgroDW/PEyE7x/f4rm0K4fKD33BN9VXEvc7tAUulRFdWA3gUB0sgrb0cUTHziLgoPIkxkh8KIzjFR3sH+7+A1AXbaAJ0enxIZ8z4SxLc286dPp9deaUvtw94zCqBr75Rv9077sFqWDqmYpcYNc/MQIDAQAB"
+    },
+    {
+      "kid": "ps-vec-2049",
+      "kind": "RSA",
+      "bits": 2049,
+      "jwk": {
+        "alg": "PS256",
+        "e": "AQAB",
+        "kid": "ps-vec-2049",
+        "kty": "RSA",
+        "n": "AXqUE4MpypoeSvjkK_x-6ekXnwMK_5x9RKd-eJOwiq2m6EpOJdzs2_QyloNBgb-v0ZujsnJkhuwR3o5ZkTv158DGDWjUQuh1tEwizdvpcFpg5Ninw5fUhoc6JJfjGcEAUP7jQILN8cnKJZjVhakf8OLXFT7Ab0g6pF8mW5wqNrcY5fUREmS6MzNqBZ_ULlmBLH8Ef4bn1xL-xLEnjp5LEyEpHBAjzpGxGN0j48NbJ_pIh_JXbkZ7gtNNVE3_5YIp2TYJ8WGNJw7bdhjByfFPE2DCJlCd8Wt5pW0gZjn2t5w5cZd4aPqo9w3aXdz8ywMFjTPaLAGQ09CXC7S1XhKrBGk",
+        "use": "sig"
+      },
+      "spki_der_b64": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEBepQTgynKmh5K+OQr/H7p6RefAwr/nH1Ep354k7CKraboSk4l3Ozb9DKWg0GBv6/Rm6OycmSG7BHejlmRO/XnwMYNaNRC6HW0TCLN2+lwWmDk2KfDl9SGhzokl+MZwQBQ/uNAgs3xycolmNWFqR/w4tcVPsBvSDqkXyZbnCo2txjl9RESZLozM2oFn9QuWYEsfwR/hufXEv7EsSeOnksTISkcECPOkbEY3SPjw1sn+kiH8lduRnuC001UTf/lginZNgnxYY0nDtt2GMHJ8U8TYMImUJ3xa3mlbSBmOfa3nDlxl3ho+qj3Ddpd3PzLAwWNM9osAZDT0JcLtLVeEqsEaQIDAQAB"
+    },
+    {
+      "kid": "ps-vec-3072",
+      "kind": "RSA",
+      "bits": 3072,
+      "jwk": {
+        "alg": "PS256",
+        "e": "AQAB",
+        "kid": "ps-vec-3072",
+        "kty": "RSA",
+        "n": "z0VEkzagKd7c7u2xb11eLnU75Bgdck4QN7rOzmcu57Tq_inQ9VErkP0dduOANzmaszo0Vk87XkpwBswR71jR9yUe2NET_OjsLjj5F0ah1LeUrrN3ZPpjwRkXULg5sY0V2gjMpaa9tfQhaZHokWqk0z9P7kKVtREYM4uB2N2UAo0Q03mXlxW0xOxH7WcSBOGKGrKAygnZAZ2Jx1Fygwf4XigZ8RzYQGcT23uNzKxxU0opWkH_8l0OQ4qspaIbnNJOMoXZtPJFH78mNBeDtqFn0xdl2k_uwzJuDubGA46Y_TMIyR4kKqOUl9rgKb0SyvxZcF6qQ47YW_AtSrCV7kPJE_dFRVRMuTK7oPwcphSBrRU_XMqx0SryixrZhJEnYHcSBnpyY2z9Fhl1PhJH5-U_Y4R5-Gj-n4xUQjuk2wHPHoAAxyVXNDGthJPAPQYe3xrjgPCV2UTm_pSTMipx0Vgi7IinEAPRRsR0iBKuDE8kDVhEYk7mwcJUDKPxsRM9jcZR",
+        "use": "sig"
+      },
+      "spki_der_b64": "MIIBojANBgkqhkiG9w0BAQEFAAOCAY8AMIIBigKCAYEAz0VEkzagKd7c7u2xb11eLnU75Bgdck4QN7rOzmcu57Tq/inQ9VErkP0dduOANzmaszo0Vk87XkpwBswR71jR9yUe2NET/OjsLjj5F0ah1LeUrrN3ZPpjwRkXULg5sY0V2gjMpaa9tfQhaZHokWqk0z9P7kKVtREYM4uB2N2UAo0Q03mXlxW0xOxH7WcSBOGKGrKAygnZAZ2Jx1Fygwf4XigZ8RzYQGcT23uNzKxxU0opWkH/8l0OQ4qspaIbnNJOMoXZtPJFH78mNBeDtqFn0xdl2k/uwzJuDubGA46Y/TMIyR4kKqOUl9rgKb0SyvxZcF6qQ47YW/AtSrCV7kPJE/dFRVRMuTK7oPwcphSBrRU/XMqx0SryixrZhJEnYHcSBnpyY2z9Fhl1PhJH5+U/Y4R5+Gj+n4xUQjuk2wHPHoAAxyVXNDGthJPAPQYe3xrjgPCV2UTm/pSTMipx0Vgi7IinEAPRRsR0iBKuDE8kDVhEYk7mwcJUDKPxsRM9jcZRAgMBAAE="
+    },
+    {
+      "kid": "ps-vec-other",
+      "kind": "RSA",
+      "bits": 2048,
+      "jwk": {
+        "alg": "PS256",
+        "e": "AQAB",
+        "kid": "ps-vec-other",
+        "kty": "RSA",
+        "n": "rGgL7masFZ0nNKX7y2A_Y-pa4kV6u0auCx8Nf2QHHhdJiXM4eTU99A4EWYRE8A94bvT-LhHq0d7jC72R4jPDk3o8IbtHVVXDQL1pnXJ0olyUIHnarJkGjbTjUSXRliy2AivVKExZ3IoZ9-oTxIJuTizBRyFGM-dSeyZz3Po_-sycFz4jP3NlnA0GSOSM-jqUleiGxjI_DH-8MqRcbS7Gwd1PFN-wTpKRuvz3h2_Yl5fxpdSH4e_-VDYeMKuv9LGAVCbdyN5HiVPa7QyCu6jeHvS9Kf4TeNWkOFSNoSSXxsbdppjAZUEEXXPBM1sRjsc38oDRiMkodIwHQK9EU46JMQ",
+        "use": "sig"
+      },
+      "spki_der_b64": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArGgL7masFZ0nNKX7y2A/Y+pa4kV6u0auCx8Nf2QHHhdJiXM4eTU99A4EWYRE8A94bvT+LhHq0d7jC72R4jPDk3o8IbtHVVXDQL1pnXJ0olyUIHnarJkGjbTjUSXRliy2AivVKExZ3IoZ9+oTxIJuTizBRyFGM+dSeyZz3Po/+sycFz4jP3NlnA0GSOSM+jqUleiGxjI/DH+8MqRcbS7Gwd1PFN+wTpKRuvz3h2/Yl5fxpdSH4e/+VDYeMKuv9LGAVCbdyN5HiVPa7QyCu6jeHvS9Kf4TeNWkOFSNoSSXxsbdppjAZUEEXXPBM1sRjsc38oDRiMkodIwHQK9EU46JMQIDAQAB"
+    },
+    {
+      "kid": "rs-vec-2048",
+      "kind": "RSA",
+      "bits": 2048,
+      "jwk": {
+        "alg": "RS256",
+        "e": "AQAB",
+        "kid": "rs-vec-2048",
+        "kty": "RSA",
+        "n": "0ePfwQrTxs9XlNLV9CTFKKLytgOcHaSy7NYhCcIGdUxbSjC5QQJ8JUjd2vhse3PtzPH1MGg_YiGfv7X9SQd5WNnASsd5fzMqlnajjwDx4ZU2xAckw29ooFXwEBez-Ld99vkFIT6MMAyzwWVNr8AW3Rx8PpEilIGXEDjVpjwPScPLGcTOJT8sAuh6D4v_8g12VsgSxFgbBoZ3wETQbtqrdAgK-phyLgsxVyh_eWDtgnikvfIE2GSYFWKCH3t_Ua-8c12u4Opn6JOQHd6N0GiyJkopVReLVMhmKzT93AZDq5Glhx2gAmdeFjKhoR9XBnaFy2tlWhFaErwVQxk-Q6492Q",
+        "use": "sig"
+      },
+      "spki_der_b64": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0ePfwQrTxs9XlNLV9CTFKKLytgOcHaSy7NYhCcIGdUxbSjC5QQJ8JUjd2vhse3PtzPH1MGg/YiGfv7X9SQd5WNnASsd5fzMqlnajjwDx4ZU2xAckw29ooFXwEBez+Ld99vkFIT6MMAyzwWVNr8AW3Rx8PpEilIGXEDjVpjwPScPLGcTOJT8sAuh6D4v/8g12VsgSxFgbBoZ3wETQbtqrdAgK+phyLgsxVyh/eWDtgnikvfIE2GSYFWKCH3t/Ua+8c12u4Opn6JOQHd6N0GiyJkopVReLVMhmKzT93AZDq5Glhx2gAmdeFjKhoR9XBnaFy2tlWhFaErwVQxk+Q6492QIDAQAB"
+    },
+    {
+      "kid": "rs-vec-4096",
+      "kind": "RSA",
+      "bits": 4096,
+      "jwk": {
+        "alg": "RS256",
+        "e": "AQAB",
+        "kid": "rs-vec-4096",
+        "kty": "RSA",
+        "n": "kkkJWUul14ScBh72MxzBd3U5MXjr2cAIa7QilrOLXKnM79p9kl4uTSlzQfqTF5i6YodWdIi5s1avcesbUO6DahpS_wpaQWawp5lO8L4kXodFd8kPJiblbYPOfmrDpSX1zUADQOMqfvRRvx9ro6Uc3z2dqZ3BZ2geXIIO0fCNxfPkQaVbN8Ed6cVJBAstJZUSPgJnmQsD2c3jRMfzqVUm65P99OpsQn1l-_j-OJj1TzxhNB8g_oHPNxmG-Ech3B-zdL-Ii7Do4LjhLCgAcpc-NzM23DCC-ikBWQQc-87eJOVw87eBnACrdStTKGdkaQ571_5Rhjwz0Wx1BQHr-oz6muJ0a91fX_eettImch1VYuCnS3fNleG3M5UFkEexXgqrut2xfs7-Ebbfef1UVLt8cWBhlTBs28OERDYhb3j6V3zpVt5LoEXvRkw61HAl0fRZXuW9IlQie_8mbEYnsgThnTZ9j9g0NNMgStIeudwwPSRohvatTh12OFkvvh6dYBwESNabDg9Gtxv4XTlNbbp6opX_Z8631SnhMPCqte6UcK8cGw_U6nbCuIgz4uf_rEEsS5YhzH6tqcdROgcJ3pPAm61PA_D97KJYCSSOeo_7wL_hyiVfPBQTQ_YQ2EtLvyrVvmYQtnIZUP6GvXcFXAoZtae3Lqsa4M3i3bs1G7UDZiE",
+        "use": "sig"
+      },
+      "spki_der_b64": "MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAkkkJWUul14ScBh72MxzBd3U5MXjr2cAIa7QilrOLXKnM79p9kl4uTSlzQfqTF5i6YodWdIi5s1avcesbUO6DahpS/wpaQWawp5lO8L4kXodFd8kPJiblbYPOfmrDpSX1zUADQOMqfvRRvx9ro6Uc3z2dqZ3BZ2geXIIO0fCNxfPkQaVbN8Ed6cVJBAstJZUSPgJnmQsD2c3jRMfzqVUm65P99OpsQn1l+/j+OJj1TzxhNB8g/oHPNxmG+Ech3B+zdL+Ii7Do4LjhLCgAcpc+NzM23DCC+ikBWQQc+87eJOVw87eBnACrdStTKGdkaQ571/5Rhjwz0Wx1BQHr+oz6muJ0a91fX/eettImch1VYuCnS3fNleG3M5UFkEexXgqrut2xfs7+Ebbfef1UVLt8cWBhlTBs28OERDYhb3j6V3zpVt5LoEXvRkw61HAl0fRZXuW9IlQie/8mbEYnsgThnTZ9j9g0NNMgStIeudwwPSRohvatTh12OFkvvh6dYBwESNabDg9Gtxv4XTlNbbp6opX/Z8631SnhMPCqte6UcK8cGw/U6nbCuIgz4uf/rEEsS5YhzH6tqcdROgcJ3pPAm61PA/D97KJYCSSOeo/7wL/hyiVfPBQTQ/YQ2EtLvyrVvmYQtnIZUP6GvXcFXAoZtae3Lqsa4M3i3bs1G7UDZiECAwEAAQ=="
+    },
+    {
+      "kid": "rs-vec-1024",
+      "kind": "RSA",
+      "bits": 1024,
+      "jwk": {
+        "alg": "RS256",
+        "e": "AQAB",
+        "kid": "rs-vec-1024",
+        "kty": "RSA",
+        "n": "pZMjcC3GOFy_UMwesJercHWocUYK8K9d-hm1z7p4G6lman2s7SfFFyAibQ5keFSWlqUmTBj-ixjkSq8wOlWRMmkrXu4kEDHNCMSrbPbSzOfygQwq4nKYBapplqtMqg0lcZdQ23Gn8Q0SMpWPy2hizv6lYuMCwlQU-nnuCLdAyjE",
+        "use": "sig"
+      },
+      "spki_der_b64": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQClkyNwLcY4XL9QzB6wl6twdahxRgrwr136GbXPungbqWZqfaztJ8UXICJtDmR4VJaWpSZMGP6LGORKrzA6VZEyaSte7iQQMc0IxKts9tLM5/KBDCricpgFqmmWq0yqDSVxl1DbcafxDRIylY/LaGLO/qVi4wLCVBT6ee4It0DKMQIDAQAB"
+    },
+    {
+      "kid": "ed-vec-1",
+      "kind": "OKP",
+      "jwk": {
+        "alg": "EdDSA",
+        "crv": "Ed25519",
+        "kid": "ed-vec-1",
+        "kty": "OKP",
+        "use": "sig",
+        "x": "GOADhyod1P5262_rVyQ7F6vf4DASZK3aV5D82P3kKvs"
+      },
+      "spki_der_b64": "MCowBQYDK2VwAyEAGOADhyod1P5262/rVyQ7F6vf4DASZK3aV5D82P3kKvs="
+    },
+    {
+      "kid": "ed-vec-2",
+      "kind": "OKP",
+      "jwk": {
+        "alg": "EdDSA",
+        "crv": "Ed25519",
+        "kid": "ed-vec-2",
+        "kty": "OKP",
+        "use": "sig",
+        "x": "jJunIW3GWHy692DWEwGZQ9Yi9vpS5KtUIZekLrapjwc"
+      },
+      "spki_der_b64": "MCowBQYDK2VwAyEAjJunIW3GWHy692DWEwGZQ9Yi9vpS5KtUIZekLrapjwc="
+    }
+  ],
+  "signatures": [
+    {
+      "name": "es256_valid",
+      "alg": "ES256",
+      "kid": "es-vec-1",
+      "input": "eyJhbGciOiJYIiwidHlwIjoiYXQrand0In0.eyJzdWIiOiJ1c3JfdmVjdG9yIiwibiI6MX0",
+      "signature": "waSL4TtE8rAIGtZm25POlw4MU3N6aW4gcnnG80j5nUII1Z-_JNI97ka0_KiQ5RNCizt2c6uoNy_4tPst4UXRJQ",
+      "valid": true,
+      "why": "valid raw r||s signature"
+    },
+    {
+      "name": "es256_high_s",
+      "alg": "ES256",
+      "kid": "es-vec-1",
+      "input": "eyJhbGciOiJYIiwidHlwIjoiYXQrand0In0.eyJzdWIiOiJ1c3JfdmVjdG9yIiwibiI6MX0",
+      "signature": "waSL4TtE8rAIGtZm25POlw4MU3N6aW4gcnnG80j5nUL3KmA_2y3CErlLA1dvGuy9MauEOftvZ1T7BM-VGx1ULA",
+      "valid": true,
+      "why": "high-S form (n - s) is mathematically valid; JOSE does not require low-S"
+    },
+    {
+      "name": "es256_tampered",
+      "alg": "ES256",
+      "kid": "es-vec-1",
+      "input": "eyJhbGciOiJYIiwidHlwIjoiYXQrand0In0.eyJzdWIiOiJ1c3JfdmVjdG9yIiwibiI6Mx0",
+      "signature": "waSL4TtE8rAIGtZm25POlw4MU3N6aW4gcnnG80j5nUII1Z-_JNI97ka0_KiQ5RNCizt2c6uoNy_4tPst4UXRJQ",
+      "valid": false,
+      "why": "signing input changed"
+    },
+    {
+      "name": "es256_wrong_key",
+      "alg": "ES256",
+      "kid": "es-vec-2",
+      "input": "eyJhbGciOiJYIiwidHlwIjoiYXQrand0In0.eyJzdWIiOiJ1c3JfdmVjdG9yIiwibiI6MX0",
+      "signature": "waSL4TtE8rAIGtZm25POlw4MU3N6aW4gcnnG80j5nUII1Z-_JNI97ka0_KiQ5RNCizt2c6uoNy_4tPst4UXRJQ",
+      "valid": false,
+      "why": "verified with a different P-256 key"
+    },
+    {
+      "name": "es256_signed_by_other",
+      "alg": "ES256",
+      "kid": "es-vec-1",
+      "input": "eyJhbGciOiJYIiwidHlwIjoiYXQrand0In0.eyJzdWIiOiJ1c3JfdmVjdG9yIiwibiI6MX0",
+      "signature": "aWaVT6HWse7jez8SeO3QuVxA_2W1AkQ83hDuwX-rEy47C_h2SnnyFfnuPx_u-T8VpGUbGqFdFoGG9m054T5ykw",
+      "valid": false,
+      "why": "signed by another key"
+    },
+    {
+      "name": "es256_short",
+      "alg": "ES256",
+      "kid": "es-vec-1",
+      "input": "eyJhbGciOiJYIiwidHlwIjoiYXQrand0In0.eyJzdWIiOiJ1c3JfdmVjdG9yIiwibiI6MX0",
+      "signature": "waSL4TtE8rAIGtZm25POlw4MU3N6aW4gcnnG80j5nUII1Z-_JNI97ka0_KiQ5RNCizt2c6uoNy_4tPst4UXR",
+      "valid": false,
+      "why": "63 bytes"
+    },
+    {
+      "name": "es256_long",
+      "alg": "ES256",
+      "kid": "es-vec-1",
+      "input": "eyJhbGciOiJYIiwidHlwIjoiYXQrand0In0.eyJzdWIiOiJ1c3JfdmVjdG9yIiwibiI6MX0",
+      "signature": "waSL4TtE8rAIGtZm25POlw4MU3N6aW4gcnnG80j5nUII1Z-_JNI97ka0_KiQ5RNCizt2c6uoNy_4tPst4UXRJQA",
+      "valid": false,
+      "why": "65 bytes"
+    },
+    {
+      "name": "es256_empty",
+      "alg": "ES256",
+      "kid": "es-vec-1",
+      "input": "eyJhbGciOiJYIiwidHlwIjoiYXQrand0In0.eyJzdWIiOiJ1c3JfdmVjdG9yIiwibiI6MX0",
+      "signature": "",
+      "valid": false,
+      "why": "empty signature"
+    },
+    {
+      "name": "es256_r_zero",
+      "alg": "ES256",
+      "kid": "es-vec-1",
+      "input": "eyJhbGciOiJYIiwidHlwIjoiYXQrand0In0.eyJzdWIiOiJ1c3JfdmVjdG9yIiwibiI6MX0",
+      "signature": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI1Z-_JNI97ka0_KiQ5RNCizt2c6uoNy_4tPst4UXRJQ",
+      "valid": false,
+      "why": "r = 0"
+    },
+    {
+      "name": "es256_s_zero",
+      "alg": "ES256",
+      "kid": "es-vec-1",
+      "input": "eyJhbGciOiJYIiwidHlwIjoiYXQrand0In0.eyJzdWIiOiJ1c3JfdmVjdG9yIiwibiI6MX0",
+      "signature": "waSL4TtE8rAIGtZm25POlw4MU3N6aW4gcnnG80j5nUIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "valid": false,
+      "why": "s = 0"
+    },
+    {
+      "name": "es256_r_eq_n",
+      "alg": "ES256",
+      "kid": "es-vec-1",
+      "input": "eyJhbGciOiJYIiwidHlwIjoiYXQrand0In0.eyJzdWIiOiJ1c3JfdmVjdG9yIiwibiI6MX0",
+      "signature": "_____wAAAAD__________7zm-q2nF56E87nKwvxjJVEI1Z-_JNI97ka0_KiQ5RNCizt2c6uoNy_4tPst4UXRJQ",
+      "valid": false,
+      "why": "r = n (out of range)"
+    },
+    {
+      "name": "es256_s_eq_n",
+      "alg": "ES256",
+      "kid": "es-vec-1",
+      "input": "eyJhbGciOiJYIiwidHlwIjoiYXQrand0In0.eyJzdWIiOiJ1c3JfdmVjdG9yIiwibiI6MX0",
+      "signature": "waSL4TtE8rAIGtZm25POlw4MU3N6aW4gcnnG80j5nUL_____AAAAAP__________vOb6racXnoTzucrC_GMlUQ",
+      "valid": false,
+      "why": "s = n (out of range)"
+    },
+    {
+      "name": "es256_s_eq_n_plus_1",
+      "alg": "ES256",
+      "kid": "es-vec-1",
+      "input": "eyJhbGciOiJYIiwidHlwIjoiYXQrand0In0.eyJzdWIiOiJ1c3JfdmVjdG9yIiwibiI6MX0",
+      "signature": "waSL4TtE8rAIGtZm25POlw4MU3N6aW4gcnnG80j5nUL_____AAAAAP__________vOb6racXnoTzucrC_GMlUg",
+      "valid": false,
+      "why": "s = n + 1 (out of range)"
+    },
+    {
+      "name": "es256_all_ff",
+      "alg": "ES256",
+      "kid": "es-vec-1",
+      "input": "eyJhbGciOiJYIiwidHlwIjoiYXQrand0In0.eyJzdWIiOiJ1c3JfdmVjdG9yIiwibiI6MX0",
+      "signature": "_____________________________________________________________________________________w",
+      "valid": false,
+      "why": "r and s above n"
+    },
+    {
+      "name": "es256_der_encoded",
+      "alg": "ES256",
+      "kid": "es-vec-1",
+      "input": "eyJhbGciOiJYIiwidHlwIjoiYXQrand0In0.eyJzdWIiOiJ1c3JfdmVjdG9yIiwibiI6MX0",
+      "signature": "MEUCIDEMX0p9HrdO8vrN88OKdllICB2Vt3fXPkuiMzfEdsDZAiEAwJMqKzEQnCGN8wUpfcda3rSh1ggf61TBVySnI3y7Brk",
+      "valid": false,
+      "why": "ASN.1 DER signature instead of JOSE raw r||s"
+    },
+    {
+      "name": "ps256_valid_2048",
+      "alg": "PS256",
+      "kid": "ps-vec-2048",
+      "input": "eyJhbGciOiJYIiwidHlwIjoiYXQrand0In0.eyJzdWIiOiJ1c3JfdmVjdG9yIiwibiI6MX0",
+      "signature": "BPcFJSA7wcqri-YNvLxUXkKM2vzCcsqMbtzFPPPnqXra90c4qW8uplqExA-yxBhhPmiRAIpsqRmkSb08v-GZCuEONCGjTg57HVbJtmwogfxbaLPfsQUt9hI3MHo5RThVx5wGIoLmmuM9oKQYBxGDDrskQ_5QFbRqxekWODCF2VZfM4-vZy_FdGj4UN5pj27PzSnNEVK5cfRn6yq7enDjQM_QSTSUbjnzZbFQyzbShEOtaJVth3bDwRBkcuiDAOUAqAlKOFxNKBBYson3BzoH6wQGmk7b7MiE19QOOqKgQI04WAFVK-wTamtddQ2JK2ljqn7ITUCwEtLnqNkU04nqnA",
+      "valid": true,
+      "why": "salt length 32 (hash length)"
+    },
+    {
+      "name": "ps256_valid_2049",
+      "alg": "PS256",
+      "kid": "ps-vec-2049",
+      "input": "eyJhbGciOiJYIiwidHlwIjoiYXQrand0In0.eyJzdWIiOiJ1c3JfdmVjdG9yIiwibiI6MX0",
+      "signature": "AO-td5jvhCSS7MutiI5VG-T0dbornQYY0W4-Z4Vlljm2YNj19JKh9AzzRYDfs7UMBzSbpqC0d2f3sqe9N7gD_5ocSuJ6MAaxj3iMSHnBqKxa4gnJkqB9j39Z9yc4HSeX9c4tCUCEqSAW2hAMPfMOd9U0OBUAtKLiTRYRHGxvcS3cCyI7baqej16KTS_pm363T28zpAXdWUEG6t2XGQbLUZhZtbAnVPP2dE8TgaY5R2_zp_WKtboCu8HgGkIyY91mawIZ_d0ioXewXzhiuKPGnLlE-ki2TARCNtVshS-4tzLiIODtwvtakwtWeb1zfCB1HaXDqB9gaIckuGTPF3shi1U",
+      "valid": true,
+      "why": "2049-bit modulus: emLen is one byte shorter than the modulus"
+    },
+    {
+      "name": "ps256_valid_3072",
+      "alg": "PS256",
+      "kid": "ps-vec-3072",
+      "input": "eyJhbGciOiJYIiwidHlwIjoiYXQrand0In0.eyJzdWIiOiJ1c3JfdmVjdG9yIiwibiI6MX0",
+      "signature": "RG9N5U43FgWJuM4VsKgxl3-i6GEwztmDxGLLii6NEUmSx_TrSBcps32KFgdjOPaLXAwdKV8ETiNIW9tk-ByYOWjlZz_l0UWYXXM8PCJ4JHOwsS3BDYO9JC5p4Jpf3Ee_5jEZoY3rFTPNG9tUb6bBCTjcXdfTeuQ5Y0ffG09rcGXNt8hJ8lIA8NV4ypb6WHFy1RVidtnX3pnE3P9T0o6gkpKRuX789ReekIqneiKYWsYeLOHSD0eRliXfR1xVXQEXT07veY76w7zPdEC2Soq7_fZEMghn-m3UbF4LILcVTqyYzbmirtYTNgWrLbbzU_JFaeWhT0DMsxLTk0BsHFfJfpRaqT8R0bi5xKbzbEzjZqyXzlhQGlYR62_3Wa7mYMbNESPY89n1GHBO9J8yYLTzDxuYixnXeIAzF496D6CbKj5v2ljiy88TGmnEI3nOGrg_GyW-jAdsVrJ5AzwN0QsAEQLgzcmgkeYnEjtdgWTITfNqZaH8A6zOx36TabD3Bq7G",
+      "valid": true,
+      "why": "3072-bit modulus"
+    },
+    {
+      "name": "ps256_handbuilt_valid",
+      "alg": "PS256",
+      "kid": "ps-vec-2048",
+      "input": "eyJhbGciOiJYIiwidHlwIjoiYXQrand0In0.eyJzdWIiOiJ1c3JfdmVjdG9yIiwibiI6MX0",
+      "signature": "Eo-BhpRqO1AJIowByjMmwPXbbGpWI2sNqt6rV5GSKUUbKGSXvZRLlcXQ8ZAkDKpSzVsh_M-lbqLitvP6L69EhoTe8snNt4OTae-Hxt5d5gYe9UvlYGI4Cbexuoq_ogcMpih0JnM9Z9aecR1YNvFEkM6Hgs2tmnuP7-EqQt0LpxI7RpQtTF-M0kDWUvd2t9YZBFbDFn7GYDgp-TK-k9myBRcR_eyIGYK747xrCcponX8f-UncTYa4RjPSAABgUEnL_eqdQj6u8Fe2daS3uOFufUz6DMXMWehVHJyec9lzs0zyyK0lQYhdUbREdgg96cz7ivnkAe88xMoaKtxWoSayig",
+      "valid": true,
+      "why": "hand-built encoder sanity check"
+    },
+    {
+      "name": "ps256_handbuilt_valid_2049",
+      "alg": "PS256",
+      "kid": "ps-vec-2049",
+      "input": "eyJhbGciOiJYIiwidHlwIjoiYXQrand0In0.eyJzdWIiOiJ1c3JfdmVjdG9yIiwibiI6MX0",
+      "signature": "ARTCWuNUc3kNnej0j-wsjBFUTzl1aSYEDS_xDJzACtLsrY8ncdzBAGhgVAW_uOqzZpY-Akgv-TSauF9-d9hFGWhxOgsegL4_ww1VU4-f73WqsBUIXhfns93bOUoOvYLvXaaDlJe_3O4K6L-kscyZUIdKDWNBPao6KAMfKZ4bfXjoW8h1O9yMuWX-mGIR3tFc-b3Qjb2XGlPGpDJymjsbMeFS1J_7rc7rcaiAz204gw3jUUuq-ss1MYM0go82J7hW1NP-WhxUvqkzPO7qGNJimjRbUPKoNmgXvm90a2Mo3NhnSmgvHwvCF6zXdN2q6OQ3acPO0l8OE94s3VPR98oZKoI",
+      "valid": true,
+      "why": "hand-built encoder, 2049-bit modulus"
+    },
+    {
+      "name": "ps256_tampered",
+      "alg": "PS256",
+      "kid": "ps-vec-2048",
+      "input": "eyJhbGciOiJYIiwidHlwIjoiYXQrand0In0.eyJzdWIiOiJ1c3JfdmVjdG9yIiwibiI6Mx0",
+      "signature": "GuV0oX5wYsYPHPQFh3PD_DBd-16C9h_lAurrBZ6n-n-K9EFbpfNfgTsTezoD-TiPfQHmzi9O7I2q5I9W0iOUQ5QeV5I9aOcYNepsLB-VXfXpc1EmZm92dAj_5DoachOrGBxgEguDrgWNWFB3cYLm3QWPOyUL4yMspelqBqyWFFHsaXOO0jB_klSjIuKI5gSdH09UsBxQEJ92eBOXqo3CwvcuNHvG489fDp0WV8pPX0_8TK-g0BntQirYWguvdl_BMs2FFv9R795Z1W7Fy6UD6Kf362rTlK9jiux0d8XQ6DPPgKmmHCdmIhOE054HAOVECLEoglWjEQ01nBsGRHQfPw",
+      "valid": false,
+      "why": "signing input changed"
+    },
+    {
+      "name": "ps256_wrong_key",
+      "alg": "PS256",
+      "kid": "ps-vec-other",
+      "input": "eyJhbGciOiJYIiwidHlwIjoiYXQrand0In0.eyJzdWIiOiJ1c3JfdmVjdG9yIiwibiI6MX0",
+      "signature": "GuV0oX5wYsYPHPQFh3PD_DBd-16C9h_lAurrBZ6n-n-K9EFbpfNfgTsTezoD-TiPfQHmzi9O7I2q5I9W0iOUQ5QeV5I9aOcYNepsLB-VXfXpc1EmZm92dAj_5DoachOrGBxgEguDrgWNWFB3cYLm3QWPOyUL4yMspelqBqyWFFHsaXOO0jB_klSjIuKI5gSdH09UsBxQEJ92eBOXqo3CwvcuNHvG489fDp0WV8pPX0_8TK-g0BntQirYWguvdl_BMs2FFv9R795Z1W7Fy6UD6Kf362rTlK9jiux0d8XQ6DPPgKmmHCdmIhOE054HAOVECLEoglWjEQ01nBsGRHQfPw",
+      "valid": false,
+      "why": "verified with a different RSA key"
+    },
+    {
+      "name": "ps256_bit_flip",
+      "alg": "PS256",
+      "kid": "ps-vec-2048",
+      "input": "eyJhbGciOiJYIiwidHlwIjoiYXQrand0In0.eyJzdWIiOiJ1c3JfdmVjdG9yIiwibiI6MX0",
+      "signature": "GuV0oX5wYsYPHPQFh3PD_DBd-16C9h_lAurrBZ6n-n-K9EFbpfNfgTsTezoD-TiPfQHmzi9O7I2q5I9W0iOUQ5QeV5I9aOcYNepsLB-VXfXpc1EmZm92dAj_5DoachOrGBxgEgqDrgWNWFB3cYLm3QWPOyUL4yMspelqBqyWFFHsaXOO0jB_klSjIuKI5gSdH09UsBxQEJ92eBOXqo3CwvcuNHvG489fDp0WV8pPX0_8TK-g0BntQirYWguvdl_BMs2FFv9R795Z1W7Fy6UD6Kf362rTlK9jiux0d8XQ6DPPgKmmHCdmIhOE054HAOVECLEoglWjEQ01nBsGRHQfPw",
+      "valid": false,
+      "why": "one signature bit flipped"
+    },
+    {
+      "name": "ps256_salt_0",
+      "alg": "PS256",
+      "kid": "ps-vec-2048",
+      "input": "eyJhbGciOiJYIiwidHlwIjoiYXQrand0In0.eyJzdWIiOiJ1c3JfdmVjdG9yIiwibiI6MX0",
+      "signature": "pdkMz9hjSUcXpQTZHYfeHyc3n46bTmWfD9jrXN_CbJEqG9pQ2d7saQ1qgjjtzXX1PyD4wwLsMN64B92UQZt-4DGrVspSuBL8cKTkSNjrTatDCoTcJN3q3JwccwzLJct77veU44F133kDsWOCVrTu_xeDZWrefsbr-ijaidfPWPc-3plCks9ePAkrBsI5cLuVCOpIucwunrS3bBfFqAzyhy-RmG9M_LwSriIi4vGMUCMpPmsTwBcNkyb7kWmLXg4StfV-CpCmEKt8lNDmjNOWkWpUYTOoWPxkyOH5DFMQsJg4GhQ5PxYAo57uRXXFxX1AC0e9Fuk9g9Gz1QnYFom6oA",
+      "valid": false,
+      "why": "salt length 0; the SDK requires salt length = hash length"
+    },
+    {
+      "name": "ps256_salt_20",
+      "alg": "PS256",
+      "kid": "ps-vec-2048",
+      "input": "eyJhbGciOiJYIiwidHlwIjoiYXQrand0In0.eyJzdWIiOiJ1c3JfdmVjdG9yIiwibiI6MX0",
+      "signature": "rcD8HC-eSzpDzgnxshFxB1voh0qAp-DmAMHeWsVR49YdHikJOA1H0WuMSmU_k9ghTRfifNFsBuB0WzpzIEioxprV462CKc5XC03nuwbvz-zzsEWGDzhSY4TwXgIqEfXmkksaU15UGxOTZKxCh8olBJPShMD85YBkB02pS2tr2O0Vk0XsF2-veUV7UOEK3Dp4xKbDhYg9YIN3cM1aUSy_PBaJPKDLQrMXrUxF91HT4kJMNzt-HlWaPKbc1WLfxZTFt1yCoRMCVNqgjUH9v9SeK_osflydJvHCA46Z3nOkflTE-6hz-11CQxLooR5LGD6b53DKZBHVWhB8hp9WpTmDkA",
+      "valid": false,
+      "why": "salt length 20"
+    },
+    {
+      "name": "ps256_salt_64",
+      "alg": "PS256",
+      "kid": "ps-vec-2048",
+      "input": "eyJhbGciOiJYIiwidHlwIjoiYXQrand0In0.eyJzdWIiOiJ1c3JfdmVjdG9yIiwibiI6MX0",
+      "signature": "lgrgsHMpURAqDEeIVHevHBmtDE62ViamnsZlCYDvXpIeX5SJBr7f6Ajt2PC5ADhaNeW8fhCxT6RTC-8dh1HKtbEh-xXU3FS659Ywp-AuLkP-PXG-xBSMSa9xnil9W_QvVTL-MGqO6y8_yhyZlGUasiABm1l_skkTw2efJA-3Gp66Yf7WPgri5T_yg8LZ0iU_ERZZp4rcxERYBrZhkWHb9AgbjXqHlIDpDNvKto0yak-ITm6H2VyHTUcz5Smh6wHLEBjM0kp6_D2B79rd-zErgz0hc3XA7RXZ9Clgq5vbxC7O2nID1hlHBOso3QsoNFC1AxEIbWPl6_OXV36QgQGv5A",
+      "valid": false,
+      "why": "salt length 64"
+    },
+    {
+      "name": "ps256_salt_max",
+      "alg": "PS256",
+      "kid": "ps-vec-2048",
+      "input": "eyJhbGciOiJYIiwidHlwIjoiYXQrand0In0.eyJzdWIiOiJ1c3JfdmVjdG9yIiwibiI6MX0",
+      "signature": "mRAYb54LqCbj_7O2_yBt5I9mnQ0sXJ7BNPbwHSEDCHhj4AxUgYgVAQPdl0T4gE-Njk1eD5jvcybrpWGWEaVpfjuWzdu9cOxftKQk3PZIrcgYM6ECVHq55wAQrCNpCqI-Tzoi84oSCMW5jF1-HVNjJtY3vXnINWnXSrlM7MpbClNDJmfrAc8FaxE5MepoXczE_8BVu2IC3Bo9G_e9M6sK5V5rTP4cFYLLSvdeoOBAIW6I7YKDN8rkZupwE0qwK3sXwVDoyYkNaoxXGBO62gTfXcY38fgC0FWjyIsbTmq9GjP8OQjl9n9i9EqjPOwl4tS9xNGvPBQxkfGUJbKl1iWd_g",
+      "valid": false,
+      "why": "maximum salt length (Go's PSSSaltLengthAuto when signing)"
+    },
+    {
+      "name": "ps256_bad_trailer",
+      "alg": "PS256",
+      "kid": "ps-vec-2048",
+      "input": "eyJhbGciOiJYIiwidHlwIjoiYXQrand0In0.eyJzdWIiOiJ1c3JfdmVjdG9yIiwibiI6MX0",
+      "signature": "oMrXL1JWDnJHOe_mPEGJq-fme85uX6FyAuelZShZGN-T-zzpAmOGmyQfb1xDxBeRSCM6mW21CBt9cyxREiOiuDXe26_wdBrH5TWPWgPCY5OOsLsKMI_XkJgGGwckMlss-7hVE2r1OoQ2DHLsKpcFwrb-OISvcGC-6sqYfOD7_IVOktkHwb_i3WewdwVUlo6wbs0PZB_Kw3QN9FGzrtVmpT44RsZg0X4iE68Ojs41JTspBYgflEznZM-xoYx_wTXHjuDj3fTLWiPIVfjEYVRB8sN4Bo_cNKCUiCrGRdY4Pj1FutFshdTnyQZt_O-BaCo2fp0ZCujgpY_dVN1ofsuSsQ",
+      "valid": false,
+      "why": "trailer byte 0xbd instead of 0xbc"
+    },
+    {
+      "name": "ps256_bad_separator",
+      "alg": "PS256",
+      "kid": "ps-vec-2048",
+      "input": "eyJhbGciOiJYIiwidHlwIjoiYXQrand0In0.eyJzdWIiOiJ1c3JfdmVjdG9yIiwibiI6MX0",
+      "signature": "m-bhwkuJzvab20plB7AH6lEU8KNsSkZ0rLrlXeMQxOtAWpYdswJt7eNg-29M0MtE0BXON6qJMgE0KJMBfyzdGiOgMp0NVPo2Lev82M5sWaulXI1sK9-8qdp0E_7YAFo95cBk_9fMEEZI5muisW8L9x3iySgHIDMc_-CZ13kTyrsXfuyv8EN1H0mttSDiw1oQAQY9lKgJZrk_x7f2OTxdaHYm1c9dHyel9B4W5bbaRanbOpS5RfevcDVHTtsrFjV58Xt-ip6M-59MAiaXcevUnBYgW3-t-5w-Hdf5TJ_8yhuPx1n_suv3RvE4dFZY5W8H0GEqpLmabrSMELp587Ikdw",
+      "valid": false,
+      "why": "0x02 instead of the 0x01 separator"
+    },
+    {
+      "name": "ps256_nonzero_padding",
+      "alg": "PS256",
+      "kid": "ps-vec-2048",
+      "input": "eyJhbGciOiJYIiwidHlwIjoiYXQrand0In0.eyJzdWIiOiJ1c3JfdmVjdG9yIiwibiI6MX0",
+      "signature": "X5jC4IiwNc9HYwuKjqqYEdJzHwU4J0iyKBVrGD9dEUotsPyLK0rM6KN2smfm8SFGXnBmQfFvFGWOHGee_15jlrYB7jW9ZlzEW-I1q4F3FeCL6mCndw7F4KPu86Gaw4BPFvDnjt174xHl2ZG-pc0VBJzMSjUhS-BgJNRlmaG20LePYAOQSM_yqHZQ1X-Z2kV9kfgyVKMCiVzxCZXs4jVtA0epYwj6FmYNLYUlc4m49jjPiELC0gfrwgOK7oMpUaQDqNFe9ciOEQW-Ua2Mqh7rdWsFcUkmKXiMSa6f1KP2esDpry-2vXb34kqjL9MLfP2RZjhHruY0mQa_6ybHF2bWnQ",
+      "valid": false,
+      "why": "non-zero byte in the zero padding"
+    },
+    {
+      "name": "ps256_rs256_signature",
+      "alg": "PS256",
+      "kid": "ps-vec-2048",
+      "input": "eyJhbGciOiJYIiwidHlwIjoiYXQrand0In0.eyJzdWIiOiJ1c3JfdmVjdG9yIiwibiI6MX0",
+      "signature": "eksXMal3MXni-HlU87mEjsycGPXhd8AI6W4Kop1RHoOwql1np-UFwMkdwpM9WzmEkA1i8CMZQQyncbgeYaGv32Qw3dnxTiWAla4sScIKjeoxuJ7ZoudCGhEFnVi_Nsbsz0wdaPfpMltC2PL7hWFMr43NbDPKldeLsTWsRAfwVDdCDHuhH4wUJqEMO8rh65CHrzoxUGg7CasWUSsCXi0oRqcejTjKshN4GT6ImLe75O_ONuoAv023AOJvDGZknw2INgoqY-3pGMERthBubAmTHogTyDqxQVbeP8nMpXUIDKzb8nQC5cEOHZTQfvW7icf5DcCP0uKMk44iwyO02wvU9A",
+      "valid": false,
+      "why": "PKCS#1 v1.5 signature presented as PS256"
+    },
+    {
+      "name": "ps256_sig_eq_n",
+      "alg": "PS256",
+      "kid": "ps-vec-2048",
+      "input": "eyJhbGciOiJYIiwidHlwIjoiYXQrand0In0.eyJzdWIiOiJ1c3JfdmVjdG9yIiwibiI6MX0",
+      "signature": "uwLsa79DieinWpBb_8O-3uzs39WQxeOC5r5WlY_wElrcWgnJaEMRnZGZ-OGkvGivxC8F3f0nE_z5wqMfFfqjVzhjx_nNAEEMnzLKWPpAYN4g4GPKxkOTkXmgkyb01DVQqDLI7yehZMi4BD_sew1XbvwuCBRrJI-lsPukKHGYDcDN2O28fd8OnEqqzC3zj1rtISgroDW_PEyE7x_f4rm0K4fKD33BN9VXEvc7tAUulRFdWA3gUB0sgrb0cUTHziLgoPIkxkh8KIzjFR3sH-7-A1AXbaAJ0enxIZ8z4SxLc286dPp9deaUvtw94zCqBr75Rv9077sFqWDqmYpcYNc_MQ",
+      "valid": false,
+      "why": "signature representative = n (out of range)"
+    },
+    {
+      "name": "ps256_sig_all_ff",
+      "alg": "PS256",
+      "kid": "ps-vec-2048",
+      "input": "eyJhbGciOiJYIiwidHlwIjoiYXQrand0In0.eyJzdWIiOiJ1c3JfdmVjdG9yIiwibiI6MX0",
+      "signature": "_____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________w",
+      "valid": false,
+      "why": "signature representative \u003e n"
+    },
+    {
+      "name": "ps256_sig_zero",
+      "alg": "PS256",
+      "kid": "ps-vec-2048",
+      "input": "eyJhbGciOiJYIiwidHlwIjoiYXQrand0In0.eyJzdWIiOiJ1c3JfdmVjdG9yIiwibiI6MX0",
+      "signature": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "valid": false,
+      "why": "signature representative 0"
+    },
+    {
+      "name": "ps256_sig_one",
+      "alg": "PS256",
+      "kid": "ps-vec-2048",
+      "input": "eyJhbGciOiJYIiwidHlwIjoiYXQrand0In0.eyJzdWIiOiJ1c3JfdmVjdG9yIiwibiI6MX0",
+      "signature": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ",
+      "valid": false,
+      "why": "signature representative 1"
+    },
+    {
+      "name": "ps256_short",
+      "alg": "PS256",
+      "kid": "ps-vec-2048",
+      "input": "eyJhbGciOiJYIiwidHlwIjoiYXQrand0In0.eyJzdWIiOiJ1c3JfdmVjdG9yIiwibiI6MX0",
+      "signature": "5XShfnBixg8c9AWHc8P8MF37XoL2H-UC6usFnqf6f4r0QVul81-BOxN7OgP5OI99AebOL07sjarkj1bSI5RDlB5Xkj1o5xg16mwsH5Vd9elzUSZmb3Z0CP_kOhpyE6sYHGASC4OuBY1YUHdxgubdBY87JQvjIyyl6WoGrJYUUexpc47SMH-SVKMi4ojmBJ0fT1SwHFAQn3Z4E5eqjcLC9y40e8bjz18OnRZXyk9fT_xMr6DQGe1CKthaC692X8EyzYUW_1Hv3lnVbsXLpQPop_fratOUr2OK7HR3xdDoM8-AqaYcJ2YiE4TTngcA5UQIsSiCVaMRDTWcGwZEdB8_",
+      "valid": false,
+      "why": "one byte shorter than the modulus"
+    },
+    {
+      "name": "ps256_long",
+      "alg": "PS256",
+      "kid": "ps-vec-2048",
+      "input": "eyJhbGciOiJYIiwidHlwIjoiYXQrand0In0.eyJzdWIiOiJ1c3JfdmVjdG9yIiwibiI6MX0",
+      "signature": "ABrldKF-cGLGDxz0BYdzw_wwXftegvYf5QLq6wWep_p_ivRBW6XzX4E7E3s6A_k4j30B5s4vTuyNquSPVtIjlEOUHleSPWjnGDXqbCwflV316XNRJmZvdnQI_-Q6GnITqxgcYBILg64FjVhQd3GC5t0FjzslC-MjLKXpagaslhRR7GlzjtIwf5JUoyLiiOYEnR9PVLAcUBCfdngTl6qNwsL3LjR7xuPPXw6dFlfKT19P_EyvoNAZ7UIq2FoLr3ZfwTLNhRb_Ue_eWdVuxculA-in9-tq05SvY4rsdHfF0Ogzz4CpphwnZiIThNOeBwDlRAixKIJVoxENNZwbBkR0Hz8",
+      "valid": false,
+      "why": "leading zero byte added (longer than the modulus)"
+    },
+    {
+      "name": "ps256_empty",
+      "alg": "PS256",
+      "kid": "ps-vec-2048",
+      "input": "eyJhbGciOiJYIiwidHlwIjoiYXQrand0In0.eyJzdWIiOiJ1c3JfdmVjdG9yIiwibiI6MX0",
+      "signature": "",
+      "valid": false,
+      "why": "empty signature"
+    },
+    {
+      "name": "rs256_valid_2048",
+      "alg": "RS256",
+      "kid": "rs-vec-2048",
+      "input": "eyJhbGciOiJYIiwidHlwIjoiYXQrand0In0.eyJzdWIiOiJ1c3JfdmVjdG9yIiwibiI6MX0",
+      "signature": "SThwCua0XATHiMFTZXdUGmGumPbeR6Tcg7f8a4vZkpNoqlEVjCutPdPGcrJ56_f5TxupWiFMnEWyzhsZoTn1l2dRvuOkyTKF-_BPZEougznFJ54LGint9cpUC8QBzio2ZNGLzV13qEd66u9SXvYNY66n_kuQXbkyH1bhptzJHSbKNuzpdUL8hknCF662No41hEvgzTOgmUxFqtoUwm0EOr_Cu-XtgU1bYUdoS4hMRylWeRsuKLJ_GLaYFgyCQHRng8S89mG_OY_bFEkogTZwRwbnr_LPCfBlfZjt74GO82-5MRe2ragmKmPSiXD2SHImrONqriMXK7t_kKGnID8XPA",
+      "valid": true,
+      "why": "PKCS#1 v1.5, SHA-256"
+    },
+    {
+      "name": "rs256_valid_4096",
+      "alg": "RS256",
+      "kid": "rs-vec-4096",
+      "input": "eyJhbGciOiJYIiwidHlwIjoiYXQrand0In0.eyJzdWIiOiJ1c3JfdmVjdG9yIiwibiI6MX0",
+      "signature": "Pg0y8U6nrcl58jGCNCiasDm2F0nao28W5YmXiWw7frk0mffmKQGcnzdUAu6Pt_FumVVOjfX96X_CVmUPftyE6I6kMBiuInb-0Ie4JpWQzYeaeEhYIhGubTHtXFcHenOVWATja5zsRy1gVnG7eTMK94YtdZoEQsS3LYSqof0vYtowZlAj68x3fNZkxMEC8X2RftMTFWVpUYTPFESu1LzcYD27UdVld8GDM-w_tPJE7crHFubKgkA0_YH19NbfUspHGeMYt1uE-sywgd44hQAKJ_8OiJrrhrEzW_Fg3RWeS0z1wrOQb2i_WoqTd56vp2MuYfseyztYZPCZ7N1PGQCG7i2iLmMjcUXwuF_X2IjklQPB3L9ZrUY3DmVtKVClUKvrCT0R0xg2-kW-Hlczm10LuZh-07yxMJbtqNSJtgwB4oaWLPLRaI__qbXC7DwUJHdcMxD3xsHT5k9i5_ZRs56a80W2gv-sk3Qdm646cTDzcSnf6FgaTM_VBiJKHmXvK-QrLd4qi_Zvrlyv0R2udSdPmSULYedXQWDjG6UepJ-PTAc_TxGzfmjY6_twNzVK4HdThcmLrFPe-F22fh8cPnGbCeBmquwGBpk7dFdXbWKy2U846O0BpQ3CoqzCGjagXwC8P0adjhu7CS6pLu1F6sHAJaD92GZzvsYSNIjBBESuX84",
+      "valid": true,
+      "why": "4096-bit modulus"
+    },
+    {
+      "name": "rs256_tampered",
+      "alg": "RS256",
+      "kid": "rs-vec-2048",
+      "input": "eyJhbGciOiJYIiwidHlwIjoiYXQrand0In0.eyJzdWIiOiJ1c3JfdmVjdG9yIiwibiI6Mx0",
+      "signature": "SThwCua0XATHiMFTZXdUGmGumPbeR6Tcg7f8a4vZkpNoqlEVjCutPdPGcrJ56_f5TxupWiFMnEWyzhsZoTn1l2dRvuOkyTKF-_BPZEougznFJ54LGint9cpUC8QBzio2ZNGLzV13qEd66u9SXvYNY66n_kuQXbkyH1bhptzJHSbKNuzpdUL8hknCF662No41hEvgzTOgmUxFqtoUwm0EOr_Cu-XtgU1bYUdoS4hMRylWeRsuKLJ_GLaYFgyCQHRng8S89mG_OY_bFEkogTZwRwbnr_LPCfBlfZjt74GO82-5MRe2ragmKmPSiXD2SHImrONqriMXK7t_kKGnID8XPA",
+      "valid": false,
+      "why": "signing input changed"
+    },
+    {
+      "name": "rs256_wrong_key",
+      "alg": "RS256",
+      "kid": "ps-vec-other",
+      "input": "eyJhbGciOiJYIiwidHlwIjoiYXQrand0In0.eyJzdWIiOiJ1c3JfdmVjdG9yIiwibiI6MX0",
+      "signature": "SThwCua0XATHiMFTZXdUGmGumPbeR6Tcg7f8a4vZkpNoqlEVjCutPdPGcrJ56_f5TxupWiFMnEWyzhsZoTn1l2dRvuOkyTKF-_BPZEougznFJ54LGint9cpUC8QBzio2ZNGLzV13qEd66u9SXvYNY66n_kuQXbkyH1bhptzJHSbKNuzpdUL8hknCF662No41hEvgzTOgmUxFqtoUwm0EOr_Cu-XtgU1bYUdoS4hMRylWeRsuKLJ_GLaYFgyCQHRng8S89mG_OY_bFEkogTZwRwbnr_LPCfBlfZjt74GO82-5MRe2ragmKmPSiXD2SHImrONqriMXK7t_kKGnID8XPA",
+      "valid": false,
+      "why": "verified with a different RSA key"
+    },
+    {
+      "name": "rs256_pss_signature",
+      "alg": "RS256",
+      "kid": "rs-vec-2048",
+      "input": "eyJhbGciOiJYIiwidHlwIjoiYXQrand0In0.eyJzdWIiOiJ1c3JfdmVjdG9yIiwibiI6MX0",
+      "signature": "o-tPPlcwybzqKZzmwrMnYO6fJGZVyhEPWnwEKf6zBwEyg_ozZ_YLPrsn8FTp2NR3rlOdeSftCeqwDWYgcQgjnbxsorQP5R0r6tIhpDWJWI7RX_8xUN9z_Ix7RQJu44wR4IiD6iz_0bNl0LN0C7pfgHWLPWRq8UsdMpd5qdFvcqkVgPiPe_JUiwl3xPlFt0i5mUSNLJw72JBQJ7_NfzjoKUnnBQWm5bg2M7Ps8-mHSgkaXasHC3MdG95jE5ISdYO2tRouaMkegZwqmRjqrRSQoOQ8-OH_45jGIvbzjfmw9KA5qrtLNjZ2NfluMU3stQCp5eDCzuSL9aCGMDxhyI61DQ",
+      "valid": false,
+      "why": "PSS signature presented as RS256"
+    },
+    {
+      "name": "rs256_short",
+      "alg": "RS256",
+      "kid": "rs-vec-2048",
+      "input": "eyJhbGciOiJYIiwidHlwIjoiYXQrand0In0.eyJzdWIiOiJ1c3JfdmVjdG9yIiwibiI6MX0",
+      "signature": "SThwCua0XATHiMFTZXdUGmGumPbeR6Tcg7f8a4vZkpNoqlEVjCutPdPGcrJ56_f5TxupWiFMnEWyzhsZoTn1l2dRvuOkyTKF-_BPZEougznFJ54LGint9cpUC8QBzio2ZNGLzV13qEd66u9SXvYNY66n_kuQXbkyH1bhptzJHSbKNuzpdUL8hknCF662No41hEvgzTOgmUxFqtoUwm0EOr_Cu-XtgU1bYUdoS4hMRylWeRsuKLJ_GLaYFgyCQHRng8S89mG_OY_bFEkogTZwRwbnr_LPCfBlfZjt74GO82-5MRe2ragmKmPSiXD2SHImrONqriMXK7t_kKGnID8X",
+      "valid": false,
+      "why": "truncated"
+    },
+    {
+      "name": "eddsa_valid",
+      "alg": "EdDSA",
+      "kid": "ed-vec-1",
+      "input": "eyJhbGciOiJYIiwidHlwIjoiYXQrand0In0.eyJzdWIiOiJ1c3JfdmVjdG9yIiwibiI6MX0",
+      "signature": "yasDqUyoC08UUpQ7fYWtAlA6vwC1VWKan1w46QvU7HflyVDe8AyMCDOvNUYLm1QKghpRif49Zx_N2pEyQVOtAw",
+      "valid": true,
+      "why": "Ed25519"
+    },
+    {
+      "name": "eddsa_tampered",
+      "alg": "EdDSA",
+      "kid": "ed-vec-1",
+      "input": "eyJhbGciOiJYIiwidHlwIjoiYXQrand0In0.eyJzdWIiOiJ1c3JfdmVjdG9yIiwibiI6Mx0",
+      "signature": "yasDqUyoC08UUpQ7fYWtAlA6vwC1VWKan1w46QvU7HflyVDe8AyMCDOvNUYLm1QKghpRif49Zx_N2pEyQVOtAw",
+      "valid": false,
+      "why": "signing input changed"
+    },
+    {
+      "name": "eddsa_wrong_key",
+      "alg": "EdDSA",
+      "kid": "ed-vec-2",
+      "input": "eyJhbGciOiJYIiwidHlwIjoiYXQrand0In0.eyJzdWIiOiJ1c3JfdmVjdG9yIiwibiI6MX0",
+      "signature": "yasDqUyoC08UUpQ7fYWtAlA6vwC1VWKan1w46QvU7HflyVDe8AyMCDOvNUYLm1QKghpRif49Zx_N2pEyQVOtAw",
+      "valid": false,
+      "why": "verified with a different key"
+    },
+    {
+      "name": "eddsa_short",
+      "alg": "EdDSA",
+      "kid": "ed-vec-1",
+      "input": "eyJhbGciOiJYIiwidHlwIjoiYXQrand0In0.eyJzdWIiOiJ1c3JfdmVjdG9yIiwibiI6MX0",
+      "signature": "yasDqUyoC08UUpQ7fYWtAlA6vwC1VWKan1w46QvU7HflyVDe8AyMCDOvNUYLm1QKghpRif49Zx_N2pEyQVOt",
+      "valid": false,
+      "why": "63 bytes"
+    },
+    {
+      "name": "eddsa_noncanonical_s",
+      "alg": "EdDSA",
+      "kid": "ed-vec-1",
+      "input": "eyJhbGciOiJYIiwidHlwIjoiYXQrand0In0.eyJzdWIiOiJ1c3JfdmVjdG9yIiwibiI6MX0",
+      "signature": "yasDqUyoC08UUpQ7fYWtAlA6vwC1VWKan1w46QvU7HfSnUY7C3CeYAlMLenplDMfghpRif49Zx_N2pEyQVOtEw",
+      "valid": false,
+      "why": "S + L (non-canonical scalar)"
+    }
+  ],
+  "issuer": "https://id.vectors.test/realms/main",
+  "audience": "https://api.vectors.test/orders",
+  "now": 1900000000,
+  "tokens": [
+    {
+      "name": "es256_accept",
+      "token": "eyJhbGciOiJFUzI1NiIsImtpZCI6ImVzLXZlYy0xIiwidHlwIjoiYXQrand0In0.eyJhdWQiOiJodHRwczovL2FwaS52ZWN0b3JzLnRlc3Qvb3JkZXJzIiwiY2xpZW50X2lkIjoidmVjLWNsaWVudCIsImV4cCI6MTkwMDAwMDMwMCwiaWF0IjoxODk5OTk5OTkwLCJpc3MiOiJodHRwczovL2lkLnZlY3RvcnMudGVzdC9yZWFsbXMvbWFpbiIsImp0aSI6InRva192ZWMiLCJvcmdfaWQiOiJvcmdfdmVjIiwic2NvcGUiOiJvcmRlcnM6cmVhZCIsInN1YiI6InVzcl92ZWMiLCJ0b2tlbl9raW5kIjoidXNlcl9hY2Nlc3MifQ.yz6wZSAtfX5_Ld2Zfhrfrx8kcXXdag9HUcPd2-mn67oLs6yY3Plov4hm_NTgcLpazZPCBEeqFpdrj4KkWx7L9Q",
+      "expect": "accept",
+      "why": "valid ES256 access token"
+    },
+    {
+      "name": "ps256_accept",
+      "token": "eyJhbGciOiJQUzI1NiIsImtpZCI6InBzLXZlYy0yMDQ4IiwidHlwIjoiYXQrand0In0.eyJhdWQiOiJodHRwczovL2FwaS52ZWN0b3JzLnRlc3Qvb3JkZXJzIiwiY2xpZW50X2lkIjoidmVjLWNsaWVudCIsImV4cCI6MTkwMDAwMDMwMCwiaWF0IjoxODk5OTk5OTkwLCJpc3MiOiJodHRwczovL2lkLnZlY3RvcnMudGVzdC9yZWFsbXMvbWFpbiIsImp0aSI6InRva192ZWMiLCJvcmdfaWQiOiJvcmdfdmVjIiwic2NvcGUiOiJvcmRlcnM6cmVhZCIsInN1YiI6InVzcl92ZWMiLCJ0b2tlbl9raW5kIjoidXNlcl9hY2Nlc3MifQ.ZSBYU7dLQjbv4U8C0T8-3ULdlKWq8A7SE1XnSLRr12kqGUCzJNBWrx8TCR3YZvYTSazNE3weF3a3lj9ri8Mh7uqe872As-bwc5_hp6bNHT0LsbmP--J364P9yKRynpgTaHCrYKxH_DFo1a9qdO25GxAcWiPx4SQs_sZ_R-Xf8I6Th0hAEFPDet_o_9zAEfmEuNNDpjg9qDUVP70N_YGNMPb0-TzGmhm6-DX7IxIywKM8tkHi9oeM_XMxOf9me9FgS2yHC2vUOcH-TNTAG0r-yfRUxVTDbbsom6eq25uwxE7WFQQwivyC9hA7ImPvbL-GRrlWXDp_Ue4t9Gj2s6J2wA",
+      "expect": "accept",
+      "why": "valid PS256 access token"
+    },
+    {
+      "name": "ps256_2049_accept",
+      "token": "eyJhbGciOiJQUzI1NiIsImtpZCI6InBzLXZlYy0yMDQ5IiwidHlwIjoiYXQrand0In0.eyJhdWQiOiJodHRwczovL2FwaS52ZWN0b3JzLnRlc3Qvb3JkZXJzIiwiY2xpZW50X2lkIjoidmVjLWNsaWVudCIsImV4cCI6MTkwMDAwMDMwMCwiaWF0IjoxODk5OTk5OTkwLCJpc3MiOiJodHRwczovL2lkLnZlY3RvcnMudGVzdC9yZWFsbXMvbWFpbiIsImp0aSI6InRva192ZWMiLCJvcmdfaWQiOiJvcmdfdmVjIiwic2NvcGUiOiJvcmRlcnM6cmVhZCIsInN1YiI6InVzcl92ZWMiLCJ0b2tlbl9raW5kIjoidXNlcl9hY2Nlc3MifQ.ARnXBBiRfeJI7XLUc7yVXNP-t-osDlhsUQarG2Ypldh68PdsQd4eyxjM4qcmOBsqEj8bTkB0CXX2smYuYLIJye6jargINaX7xzeeIalGFFdwE7l1juuG0wRcCL5iIF-fr6wLESKYSOhMyyv_Qj31dR3pFDMEtkuoSe3MPyNKNjPItY2pPkYV1zoO4qwBAb97CY3uLY3Y_0p4cORoYoaXRJb1n6tRVI3plecIgeC3O738OSfmnAAvh2zRvdtxAveFjjHzSG0T2RGitt2S55mtQJ-HzE6roUTICJvF_rBmCrLCO0xHUoWnwsPiXXRtUtmzm332noTaqPOZw8r51t3802M",
+      "expect": "accept",
+      "why": "valid PS256 token, 2049-bit key"
+    },
+    {
+      "name": "es256_signed_by_other_key",
+      "token": "eyJhbGciOiJFUzI1NiIsImtpZCI6ImVzLXZlYy0xIiwidHlwIjoiYXQrand0In0.eyJhdWQiOiJodHRwczovL2FwaS52ZWN0b3JzLnRlc3Qvb3JkZXJzIiwiY2xpZW50X2lkIjoidmVjLWNsaWVudCIsImV4cCI6MTkwMDAwMDMwMCwiaWF0IjoxODk5OTk5OTkwLCJpc3MiOiJodHRwczovL2lkLnZlY3RvcnMudGVzdC9yZWFsbXMvbWFpbiIsImp0aSI6InRva192ZWMiLCJvcmdfaWQiOiJvcmdfdmVjIiwic2NvcGUiOiJvcmRlcnM6cmVhZCIsInN1YiI6InVzcl92ZWMiLCJ0b2tlbl9raW5kIjoidXNlcl9hY2Nlc3MifQ.zhpITSq_x11Zx89Q31_2pZIjKJuzFYQ1E6zNEV-DaPAzr_mWsOkbMLcW2XQ6XQCLz3MuVEKrGzmHA5bxsxaPPQ",
+      "expect": "signature",
+      "why": "kid es-vec-1, signed by es-vec-2"
+    },
+    {
+      "name": "ps256_signed_by_other_key",
+      "token": "eyJhbGciOiJQUzI1NiIsImtpZCI6InBzLXZlYy0yMDQ4IiwidHlwIjoiYXQrand0In0.eyJhdWQiOiJodHRwczovL2FwaS52ZWN0b3JzLnRlc3Qvb3JkZXJzIiwiY2xpZW50X2lkIjoidmVjLWNsaWVudCIsImV4cCI6MTkwMDAwMDMwMCwiaWF0IjoxODk5OTk5OTkwLCJpc3MiOiJodHRwczovL2lkLnZlY3RvcnMudGVzdC9yZWFsbXMvbWFpbiIsImp0aSI6InRva192ZWMiLCJvcmdfaWQiOiJvcmdfdmVjIiwic2NvcGUiOiJvcmRlcnM6cmVhZCIsInN1YiI6InVzcl92ZWMiLCJ0b2tlbl9raW5kIjoidXNlcl9hY2Nlc3MifQ.KcWe9Jfel6bB01csVKZ8OzcCHOpSI1qBGhKC4wau6ETi1K0_9ldhxpozTgTLeDAZU18w3zFW_4IYvvx6IqVN-kUm7BPjYHeyF_9mww9FBRqWu1HgC_0K2JEEwRyFAXtW54dKyKlz1lOFlMrmaE6z_cDOS-zqVsp_oZVHerUSo052L9ptRlgSz3SH5_sj_sXEraVtIqolezYa7WYZFdVjrjvN1J39jPm4h40gjW7ykCzhxI-SvDAYHJlwu-YZLoG5GeHHWQC6Lm2daSwRpsdiHVwQ7ABVTCSp1owMiTTpWXxT1nkQz-lL4fPRQT_iqYDimJGuqfe8RwkHsAyoM0wBKA",
+      "expect": "signature",
+      "why": "kid ps-vec-2048, signed by another key"
+    },
+    {
+      "name": "es256_header_rsa_key",
+      "token": "eyJhbGciOiJFUzI1NiIsImtpZCI6InJzLXZlYy0yMDQ4IiwidHlwIjoiYXQrand0In0.eyJhdWQiOiJodHRwczovL2FwaS52ZWN0b3JzLnRlc3Qvb3JkZXJzIiwiY2xpZW50X2lkIjoidmVjLWNsaWVudCIsImV4cCI6MTkwMDAwMDMwMCwiaWF0IjoxODk5OTk5OTkwLCJpc3MiOiJodHRwczovL2lkLnZlY3RvcnMudGVzdC9yZWFsbXMvbWFpbiIsImp0aSI6InRva192ZWMiLCJvcmdfaWQiOiJvcmdfdmVjIiwic2NvcGUiOiJvcmRlcnM6cmVhZCIsInN1YiI6InVzcl92ZWMiLCJ0b2tlbl9raW5kIjoidXNlcl9hY2Nlc3MifQ.onM5nKnuYZVIdVFupxk-oQ-xyw7qFqKJU4Q94a3_wYruTvEPSLMqoL-aOSi5PcURb-Xp53cHWiUqqsgv0d9VUA",
+      "expect": "algorithm",
+      "why": "ES256 header naming an RS256 key"
+    },
+    {
+      "name": "ps256_key_declared_rs256",
+      "token": "eyJhbGciOiJQUzI1NiIsImtpZCI6InJzLXZlYy0yMDQ4IiwidHlwIjoiYXQrand0In0.eyJhdWQiOiJodHRwczovL2FwaS52ZWN0b3JzLnRlc3Qvb3JkZXJzIiwiY2xpZW50X2lkIjoidmVjLWNsaWVudCIsImV4cCI6MTkwMDAwMDMwMCwiaWF0IjoxODk5OTk5OTkwLCJpc3MiOiJodHRwczovL2lkLnZlY3RvcnMudGVzdC9yZWFsbXMvbWFpbiIsImp0aSI6InRva192ZWMiLCJvcmdfaWQiOiJvcmdfdmVjIiwic2NvcGUiOiJvcmRlcnM6cmVhZCIsInN1YiI6InVzcl92ZWMiLCJ0b2tlbl9raW5kIjoidXNlcl9hY2Nlc3MifQ.oXOJEttzSoKYyKHSp2OGzCMANBBBW1TEhWMyItnVDpA6z3FVr6aXxmnjR0RHXOr4-jFJ_TTIutvGOj8aA7h17iiRaut2dUn3LmFtv-XxEjXOQzzdWwUCbp_dBUtfxk7A3dGx8rbP5y3EcluhVMaaPQl3gTOLfnY3oY-wca7n8KlKIn3BjWsqND-P7msSDVtjmW0xRnzLfZfUoDN2XYvRvcstDkysIUiZBRMnLGvTYUj_Fi2h3OBbR-znRuwBHDQXp6lUoTzsdFmnR_QJYzybbZCmlgLbVaWnfDNBx3108BBlAq2KyxEJQvreWwfahy-sFy21QUCFhclnFDbh4jcmYQ",
+      "expect": "algorithm",
+      "why": "PSS token under a key whose JWK alg is RS256"
+    },
+    {
+      "name": "weak_rsa_key",
+      "token": "eyJhbGciOiJSUzI1NiIsImtpZCI6InJzLXZlYy0xMDI0IiwidHlwIjoiYXQrand0In0.eyJhdWQiOiJodHRwczovL2FwaS52ZWN0b3JzLnRlc3Qvb3JkZXJzIiwiY2xpZW50X2lkIjoidmVjLWNsaWVudCIsImV4cCI6MTkwMDAwMDMwMCwiaWF0IjoxODk5OTk5OTkwLCJpc3MiOiJodHRwczovL2lkLnZlY3RvcnMudGVzdC9yZWFsbXMvbWFpbiIsImp0aSI6InRva192ZWMiLCJvcmdfaWQiOiJvcmdfdmVjIiwic2NvcGUiOiJvcmRlcnM6cmVhZCIsInN1YiI6InVzcl92ZWMiLCJ0b2tlbl9raW5kIjoidXNlcl9hY2Nlc3MifQ.dfOS1bBczylu__-ZiJXAqSLVXGmTJ92-Sx-rtOVS-sOvWRc0k_bvPSA9KhwkYGmSXPEF0pBODcZTUK3YUtI04U3RufGJUOLDebMBT-humA607u38Au-R5-u46yifXtFoTEct9A3EI5GTuCLtRWE6sI7fI60bwsH6VYn4k3Q463-rYXVeNc3CRs6fit_a5_jDBxCejvNkouXunuTpAa59DUlocPB3-8aXfLrTZtOi7AbXuiaGBGeEDp5dFmheQCxaSvMTmpuj-l8T_gor7qeUQ-tY4YNBNLOj7_VgXwOhcOlJgVTd2vM9LKCfHYc7vWY7dMZiK4vkXOizdJvubJQ8Rg",
+      "expect": "unknown_key",
+      "why": "1024-bit RSA keys are skipped"
+    },
+    {
+      "name": "es256_expired",
+      "token": "eyJhbGciOiJFUzI1NiIsImtpZCI6ImVzLXZlYy0xIiwidHlwIjoiYXQrand0In0.eyJhdWQiOiJodHRwczovL2FwaS52ZWN0b3JzLnRlc3Qvb3JkZXJzIiwiY2xpZW50X2lkIjoidmVjLWNsaWVudCIsImV4cCI6MTg5OTk5OTk2OSwiaWF0IjoxODk5OTk5OTkwLCJpc3MiOiJodHRwczovL2lkLnZlY3RvcnMudGVzdC9yZWFsbXMvbWFpbiIsImp0aSI6InRva192ZWMiLCJvcmdfaWQiOiJvcmdfdmVjIiwic2NvcGUiOiJvcmRlcnM6cmVhZCIsInN1YiI6InVzcl92ZWMiLCJ0b2tlbl9raW5kIjoidXNlcl9hY2Nlc3MifQ.-WmxzCyDySH46ib89m97NgZNs0jOIeECgQynXfVctqUeJIX8Ah0amgQD89v1IRa2jI1uVu5sO1oiEF1rE5z5TA",
+      "expect": "expired",
+      "why": "beyond the 30 s tolerance"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+/.DS_Store
+/vendor/
+/.phpunit.cache/
+/coverage/
+
+.env
+.env.*
+!.env.example
+/secrets/

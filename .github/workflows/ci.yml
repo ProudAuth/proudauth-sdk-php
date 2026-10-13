@@ -1,0 +1,37 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    strategy:
+      matrix:
+        php: ["8.2", "8.5"]
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - uses: shivammathur/setup-php@eb7c497e18156a6bbabfef1d3a82760b9eda3962 # v2
+        with:
+          php-version: ${{ matrix.php }}
+          extensions: openssl, sodium, curl, json
+          tools: composer:v2
+      - name: Verify vendored contracts
+        run: python3 scripts/check-contracts.py
+      - name: Package metadata and syntax
+        run: |
+          composer validate --no-check-publish
+          find src tests -name '*.php' -print0 | xargs -0 -n1 php -l
+      - name: SDK security fixtures and unit tests
+        run: php -d error_reporting=-1 -d display_errors=1 tests/run.php

@@ -1,0 +1,9 @@
+ProudAuth SDK for PHP
+Copyright 2026 The ProudAuth Authors
+
+Extracted from the ProudAuth working tree with original Apache-2.0 attribution.
+SOURCE-MANIFEST.json records the pre-migration source HEAD and input hashes.
+No package registry release has been published by this extraction.
+
+No Composer runtime dependencies. PHP extensions retain their upstream licences.
+Independent synthetic signature vectors are documented in tests/vectors/README.md.

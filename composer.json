@@ -1,0 +1,48 @@
+{
+    "name": "proudauth/sdk",
+    "description": "ProudAuth backend SDK for PHP: offline JWT access-token verification, strict-online introspection with the support-access contract, bounded-state verification, an OIDC backend-for-frontend client and a typed administration client.",
+    "type": "library",
+    "version": "0.2.0",
+    "license": "Apache-2.0",
+    "keywords": [
+        "proudauth",
+        "oauth2",
+        "oidc",
+        "jwt",
+        "introspection",
+        "resource-server",
+        "bff"
+    ],
+    "homepage": "https://proudauth.com/docs/",
+    "require": {
+        "php": ">=8.2",
+        "ext-curl": "*",
+        "ext-json": "*",
+        "ext-openssl": "*",
+        "ext-sodium": "*"
+    },
+    "suggest": {
+        "ext-mbstring": "Unicode-aware lowercasing of non-ASCII support-operation names (ASCII names are handled without it)"
+    },
+    "autoload": {
+        "psr-4": {
+            "ProudAuth\\Sdk\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ProudAuth\\Sdk\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "php -d error_reporting=-1 -d display_errors=1 tests/run.php"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "support": {
+        "source": "https://github.com/proudbase/proudauth-sdk-php",
+        "issues": "https://github.com/proudbase/proudauth-sdk-php/issues",
+        "docs": "https://proudauth.com/docs/"
+    }
+}
