@@ -20,8 +20,13 @@ Dart used pub get --offline; .NET used only local feeds and NuGetAudit=false.
 Generated build outputs/dependencies and temporary consumer directories were
 removed after verification. Dependency lockfiles and synthetic vectors remain.
 Final documentation/repository metadata edits do not change runtime behavior.
-No GitHub or registry publication was performed by this staging work. Independent
-CI is prepared but has not run yet for this repository.
+The staging validation preceded source publication. The reviewed source is now
+public at [`proudbase/proudauth-sdk-php`](https://github.com/proudbase/proudauth-sdk-php).
+The [initial independent CI run](https://github.com/proudbase/proudauth-sdk-php/actions/runs/38454463845)
+passed at commit `e54894273e4822458f901f7fd548503cb3a160c4` on PHP 8.2 and 8.5.
+Composer validation, syntax and the SDK test runner passed.
+GitHub private vulnerability reporting is enabled. No package-registry release
+or SDK release tag has been published.
 
 Excluded: original .git history, actual .env/credentials, deployment state,
 private screenshots/database backups, SDK caches/build output, image archives,
