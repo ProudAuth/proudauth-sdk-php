@@ -41,8 +41,8 @@
         "sort-packages": true
     },
     "support": {
-        "source": "https://github.com/proudbase/proudauth-sdk-php",
-        "issues": "https://github.com/proudbase/proudauth-sdk-php/issues",
+        "source": "https://github.com/proudauth/proudauth-sdk-php",
+        "issues": "https://github.com/proudauth/proudauth-sdk-php/issues",
         "docs": "https://proudauth.com/docs/"
     }
 }
