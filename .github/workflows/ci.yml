@@ -45,8 +45,8 @@ jobs:
           python3 - "$consumer_dir" <<'PY'
           import json, os, pathlib, sys
           document = {
-              "name": "proudbase/sdk-install-smoke",
-              "repositories": [{"type": "vcs", "url": "https://github.com/proudbase/proudauth-sdk-php.git"}],
+              "name": "proudauth/sdk-install-smoke",
+              "repositories": [{"type": "vcs", "url": "https://github.com/proudauth/proudauth-sdk-php.git"}],
               "require": {"proudauth/sdk": "dev-main#" + os.environ["PROUDAUTH_SDK_SOURCE_COMMIT"]},
               "config": {"allow-plugins": False}
           }

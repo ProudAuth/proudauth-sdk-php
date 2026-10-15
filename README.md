@@ -4,7 +4,7 @@
 > No package-registry release or stable-support window is promised yet.
 > [Documentation](https://proudauth.com/docs/) · [Contributing](CONTRIBUTING.md) · [Security](SECURITY.md)
 
-[![CI](https://github.com/proudbase/proudauth-sdk-php/actions/workflows/ci.yml/badge.svg)](https://github.com/proudbase/proudauth-sdk-php/actions/workflows/ci.yml)
+[![CI](https://github.com/proudauth/proudauth-sdk-php/actions/workflows/ci.yml/badge.svg)](https://github.com/proudauth/proudauth-sdk-php/actions/workflows/ci.yml)
 
 The first-party PHP SDK for ProudAuth (spec §28, SDK-001 to SDK-009). It is a
 port of the Node.js SDK in `sdk/node` (and through it of the Go SDK in
@@ -69,7 +69,7 @@ from this public GitHub repository without a subtree split:
 
 ```json
 {
-    "repositories": [{ "type": "vcs", "url": "https://github.com/proudbase/proudauth-sdk-php.git" }],
+    "repositories": [{ "type": "vcs", "url": "https://github.com/proudauth/proudauth-sdk-php.git" }],
     "require": { "proudauth/sdk": "dev-main" }
 }
 ```
@@ -498,7 +498,7 @@ foreach ($admin->users('ann') as $user) {            // follows next_cursor; sto
 try {
     $admin->createUser(['email' => 'a@example.com'], new RequestOptions(idempotencyKey: $savedKey)); // reuse the key when retrying
 } catch (ProblemException $e) {
-    error_log("{$e->status} {$e->errorCode} " . json_encode($e->errors)); // RFC 9457, e.g. type https://auth.proudbase.com/problems/...
+    error_log("{$e->status} {$e->errorCode} " . json_encode($e->errors)); // RFC 9457, e.g. type https://proudauth.com/problems/...
 }
 
 $res = $admin->getUser('usr_1');
